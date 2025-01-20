@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/subversion/groups/lc/!svn/ver/1432/uMsDHCAL/include
+END
+StepMax.hh
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/subversion/groups/lc/!svn/ver/1421/uMsDHCAL/include/StepMax.hh
+END
+HistoManager.hh
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/subversion/groups/lc/!svn/ver/1436/uMsDHCAL/include/HistoManager.hh
+END
+DetectorMessenger.hh
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/subversion/groups/lc/!svn/ver/1421/uMsDHCAL/include/DetectorMessenger.hh
+END
+PhysListEmStandard.hh
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/subversion/groups/lc/!svn/ver/1432/uMsDHCAL/include/PhysListEmStandard.hh
+END
+DetectorConstruction.hh.orig
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/subversion/groups/lc/!svn/ver/1421/uMsDHCAL/include/DetectorConstruction.hh.orig
+END
+DetectorConstruction.hh
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/subversion/groups/lc/!svn/ver/1421/uMsDHCAL/include/DetectorConstruction.hh
+END
+SteppingAction.hh
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/subversion/groups/lc/!svn/ver/1423/uMsDHCAL/include/SteppingAction.hh
+END
+PhysicsListMessenger.hh
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/subversion/groups/lc/!svn/ver/1432/uMsDHCAL/include/PhysicsListMessenger.hh
+END
+PrimaryGeneratorAction.hh
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/subversion/groups/lc/!svn/ver/1421/uMsDHCAL/include/PrimaryGeneratorAction.hh
+END
+StepMaxMessenger.hh
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/subversion/groups/lc/!svn/ver/1421/uMsDHCAL/include/StepMaxMessenger.hh
+END
+TrackingAction.hh
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/subversion/groups/lc/!svn/ver/1423/uMsDHCAL/include/TrackingAction.hh
+END
+RunAction.hh
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/subversion/groups/lc/!svn/ver/1425/uMsDHCAL/include/RunAction.hh
+END
+PrimaryGeneratorMessenger.hh
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/subversion/groups/lc/!svn/ver/1421/uMsDHCAL/include/PrimaryGeneratorMessenger.hh
+END
+EmAcceptance.hh
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/subversion/groups/lc/!svn/ver/1421/uMsDHCAL/include/EmAcceptance.hh
+END
+PhysicsList.hh
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/subversion/groups/lc/!svn/ver/1432/uMsDHCAL/include/PhysicsList.hh
+END
+SteppingVerbose.hh
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/subversion/groups/lc/!svn/ver/1421/uMsDHCAL/include/SteppingVerbose.hh
+END
+EventAction.hh
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/subversion/groups/lc/!svn/ver/1425/uMsDHCAL/include/EventAction.hh
+END

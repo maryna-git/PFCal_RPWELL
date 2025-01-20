@@ -1,0 +1,127 @@
+//
+// ********************************************************************
+// * License and Disclaimer                                           *
+// *                                                                  *
+// * The  Geant4 software  is  copyright of the Copyright Holders  of *
+// * the Geant4 Collaboration.  It is provided  under  the terms  and *
+// * conditions of the Geant4 Software License,  included in the file *
+// * LICENSE and available at  http://cern.ch/geant4/license .  These *
+// * include a list of copyright holders.                             *
+// *                                                                  *
+// * Neither the authors of this software system, nor their employing *
+// * institutes,nor the agencies providing financial support for this *
+// * work  make  any representation or  warranty, express or implied, *
+// * regarding  this  software system or assume any liability for its *
+// * use.  Please see the license in the file  LICENSE  and URL above *
+// * for the full disclaimer and the limitation of liability.         *
+// *                                                                  *
+// * This  code  implementation is the result of  the  scientific and *
+// * technical work of the GEANT4 collaboration.                      *
+// * By using,  copying,  modifying or  distributing the software (or *
+// * any work based  on the software)  you  agree  to acknowledge its *
+// * use  in  resulting  scientific  publications,  and indicate your *
+// * acceptance of all terms of the Geant4 Software license.          *
+// ********************************************************************
+//
+// $Id: DetectorConstruction.hh,v 1.13 2006/06/29 16:51:06 gunter Exp $
+// GEANT4 tag $Name: geant4-09-02 $
+//
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
+#ifndef DetectorConstruction_h
+#define DetectorConstruction_h 1
+
+#include "G4VUserDetectorConstruction.hh"
+#include "globals.hh"
+
+class G4Box;
+class G4LogicalVolume;
+class G4VPhysicalVolume;
+class G4Material;
+class G4UniformMagField;
+class DetectorMessenger;
+
+     const G4int MaxAbsor = 10;			// 0 + 9  
+     
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
+class DetectorConstruction : public G4VUserDetectorConstruction
+{
+public:
+  
+  DetectorConstruction();
+  ~DetectorConstruction();
+
+public:
+  
+  void SetWorldMaterial (const G4String&);
+
+  G4VPhysicalVolume* Construct();
+
+  void UpdateGeometry();
+     
+public:
+  
+  void PrintAsuParameters(); 
+                    
+  G4double GetWorldSize()           {return worldSize;}; 
+     
+  G4double GetuMThickness()       {return uMThickness;}; 
+  G4double GetuMSizeX()          {return uMSizeX;};
+  G4double GetuMSizeY()          {return uMSizeY;};
+      
+  G4double GetCellThickness()       {return cellThickness;}; 
+  G4double GetCellSizeXY()          {return cellSizeXY;};
+
+  const G4VPhysicalVolume* GetphysiWorld()        {return physiWorld;};
+  const G4Material*        GetWorldMaterial()     {return defaultMaterial;};
+
+private:
+
+	
+  G4int 	     nbCellX;
+  G4int 	     nbCellY;
+  G4double           uMSizeX;
+  G4double           uMSizeY;
+  G4double           uMThickness;
+
+  G4double           cellLineSizeXY;
+  G4double           cellLineThickness;
+
+  G4double           cellSizeXY;
+  G4double           cellThickness;
+  G4Material*        cellMaterial;
+
+  G4Material*        defaultMaterial;
+  G4double           worldSize;
+
+  G4Box*             solidWorld;
+  G4LogicalVolume*   logicWorld;
+  G4VPhysicalVolume* physiWorld;
+
+  G4Box*             soliduM;
+  G4LogicalVolume*   logicuM;
+  G4VPhysicalVolume* physicuM;
+
+  G4Box*             solidCellLine;
+  G4LogicalVolume*   logicCellLine;
+  G4VPhysicalVolume* physicCellLine;
+
+  G4Box*             solidCell;
+  G4LogicalVolume*   logicCell;
+  G4VPhysicalVolume* physicCell;
+
+  DetectorMessenger* detectorMessenger;
+
+private:
+
+  void DefineMaterials();
+  G4VPhysicalVolume* ConstructCalorimeter();
+  void PrintCalorParameters();
+};
+
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
+#endif
+
